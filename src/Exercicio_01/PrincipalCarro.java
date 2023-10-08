@@ -49,8 +49,8 @@ public class Principal {
         int anoFinal = Integer.parseInt(JOptionPane.showInputDialog("Qual o ano final?"));
         String dados = "";
         int total = 0;
-        for (Carro c : carros){
-            if (c.getAnoFabricacao() >= anoInicial && c.getAnoFabricacao() <= anoFinal){
+            for (Carro c : carros){
+                if (c.getAnoFabricacao() >= anoInicial && c.getAnoFabricacao() <= anoFinal){
                 dados += c.exibirDados();
                 total ++;
             }
